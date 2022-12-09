@@ -1,6 +1,6 @@
 ---
 title: "Bring your own carrier | MicrosoftDocs"
-description: "Use this article to understand how you can bring your own carrier to Dynamics 365 via Azure Direct Routing."
+description: "Use this article to understand how you can bring your own carrier to Dynamics 365 via direct routing."
 ms.date: 10/31/2022
 ms.service: dynamics-365-customerservice
 ms.topic: article
@@ -17,17 +17,17 @@ Azure direct routing (preview) enables you to connect your existing telephony in
 
 ## Prerequisites
 
-- Connect to an Azure Communication Services resource to bring in your carrier via Azure direct routing. You must then set up Azure direct routing for the connected Azure resource.
+- Connect to an Azure Communication Services resource to bring in your carrier via Azure Communication Services direct routing. You must then set up direct routing for the connected Azure resource.
 - Be familiar with the following concepts:
   - [Azure Communication Services](/azure/communication-services/overview)
-  - [Azure direct routing (preview)](/azure/communication-services/concepts/telephony-sms/telephony-concept#azure-direct-routing)
+  - [Azure Communication Services direct routing (preview)](/azure/communication-services/concepts/telephony-sms/telephony-concept#azure-direct-routing)
 - Ensure that the following settings are in place to enable your carrier to work with Azure Communication Services.
-  - Check your [Azure direct routing infrastructure requirements](/azure/communication-services/concepts/telephony-sms/direct-routing-infrastructure).
+  - Check your [direct routing infrastructure requirements](/azure/communication-services/concepts/telephony-sms/direct-routing-infrastructure).
   - [Get a certified Session Border Controller (SBC)](/azure/communication-services/concepts/telephony/certified-session-border-controllers).
   - [Connect the SBC to Azure Communication Services](/azure/communication-services/concepts/telephony/direct-routing-provisioning).
   - Ensure that the phone number of your Dynamics 365 organization is encoded in E.164 format so that the calls can be forwarded by your SBC.
 
-## Bring your own phone number via Azure direct routing
+## Bring your own phone number via direct routing for Azure Communication Services
 
 1. In Dynamics 365, go to one of the admin apps, and perform the following steps.
    
@@ -43,7 +43,7 @@ Azure direct routing (preview) enables you to connect your existing telephony in
 
 1. Select **Advanced** on the menu.
 
-1. Select **Add Number** for **Bring your own number via Azure Direct Routing (preview)**.
+1. Select **Add Number** for **Bring your own number via direct routing (preview)**.
 
 1. In the **Add your own phone number** dialog, enter the following details.
     - **Phone number**: Indicates the phone number that you own and have configured in your SBC.
@@ -52,7 +52,7 @@ Azure direct routing (preview) enables you to connect your existing telephony in
     - **Number type**: Select whether toll-free or a local phone number.
     - **Calling plans**: Select whether you can make or receive calls on the phone number.
         > [!Note]
-        > SMS is not supported with Azure direct routing (preview).
+        > SMS is not supported with Azure Communication Services direct routing.
 
 4. Select **Add number**.
 
